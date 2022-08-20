@@ -1,0 +1,42 @@
+{
+    "name": "",
+    "short_name": "",
+    "description": "",
+    "background_color": "",
+    "theme_color": "",
+    "start_url": "",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "",
+            "type": "",
+            "sizes": ""
+        },
+        {
+            "src": "",
+            "type": "",
+            "sizes": ""
+        },
+        {
+            "src": "",
+            "type": "",
+            "sizes": ""
+        },
+        {
+            "src": "",
+            "type": "",
+            "sizes": ""
+        },
+        {
+            "src": "",
+            "type": "",
+            "sizes": ""
+        },
+        {
+            "src": "",
+            "type": "",
+            "sizes": ""
+        }
+    ]
+
+}

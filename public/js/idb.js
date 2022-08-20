@@ -35,7 +35,7 @@ function pullRecords() {
             const transaction = db.transaction(['new-transaction'], 'readwrite');
             const budgetObjectStore = transaction.objectStore('new-transaction');
             // clear all items in your store
-            // budgetObjectStore.clear();
+            budgetObjectStore.clear();
           })
           .catch(err => {
             // set reference to redirect back here

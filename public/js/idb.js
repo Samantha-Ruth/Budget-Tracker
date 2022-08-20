@@ -10,6 +10,7 @@ function saveRecord(record) {
 
 function pullRecords() {
     // access your pending object store
+    const transaction = db.transaction(['new-transaction'], 'readwrite');
     const budgetObjectStore = transaction.objectStore('new-transaction');
     // get all records from store and set to a variable
     const getAll = budgetObjectStore.getAll();

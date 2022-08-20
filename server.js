@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
@@ -8,6 +9,8 @@ const PORT = process.env.PORT || 3001;
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/budget-tracker";
 
 app.use(express.json());
+// Added path below:
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(logger("dev"));
 app.use(compression());
 app.use(express.urlencoded({ extended: true }));

@@ -3,14 +3,14 @@ let db;
 const request = indexedDB.open('budget-tracker', 1);
 
 function saveRecord(record) {
-    const transation = db.transatcion(['transaction'], 'readwrite');
-    const budgetObjectStore = transation.objectStore('transaction');
+    const transaction = db.transaction(['new-transaction'], 'readwrite');
+    const budgetObjectStore = transaction.objectStore('new-transaction');
     budgetObjectStore.add(record);
 }
 
 request.onupgradeneeded = function(event) {
     const db = event.target.result;
-    db.createObjectStore('transaction', { autoIncrement: true });
+    db.createObjectStore('new-transaction', { autoIncrement: true });
 };
 
 request.onsuccess = function(event) {

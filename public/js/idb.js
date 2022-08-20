@@ -9,18 +9,13 @@ function saveRecord(record) {
 }
 
 function pullRecords() {
-
-    // open a transaction on your pending db
-    const transaction = db.transaction(['new_transaction'], 'readwrite');
-  
     // access your pending object store
-    const budgetObjectStore = transaction.objectStore('new_transaction');
-  
+    const budgetObjectStore = transaction.objectStore('new-transaction');
     // get all records from store and set to a variable
     const getAll = budgetObjectStore.getAll();
   
     getAll.onsuccess = function() {
-      // if there was data in indexedDb's store, let's send it to the api server
+      // if there was data in indexedDb's store, send it to the api server
       if (getAll.result.length > 0) {
         fetch('/api/transaction', {
           method: 'POST',
@@ -36,10 +31,10 @@ function pullRecords() {
               throw new Error(serverResponse);
             }
   
-            const transaction = db.transaction(['new_transaction'], 'readwrite');
-            const budgetObjectStore = transaction.objectStore('new_transaction');
+            const transaction = db.transaction(['new-transaction'], 'readwrite');
+            const budgetObjectStore = transaction.objectStore('new-transaction');
             // clear all items in your store
-            budgetObjectStore.clear();
+            // budgetObjectStore.clear();
           })
           .catch(err => {
             // set reference to redirect back here
@@ -57,7 +52,7 @@ request.onupgradeneeded = function(event) {
 
 request.onsuccess = function(event) {
     db = event.target.result;
-    if (navigator.onLine) {}
+    if (navigator.onLine) {pullRecords();}
 };
 
 request.onerror = function (event) {

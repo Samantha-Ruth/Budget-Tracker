@@ -1,41 +1,51 @@
 {
-    "name": "",
-    "short_name": "",
-    "description": "",
-    "background_color": "",
-    "theme_color": "",
-    "start_url": "",
+    "name": "Budget-Tracker",
+    "short_name": "Monies",
+    "description": "Add expenses and deposits to your budget!",
+    "background_color": "#5b5be5",
+    "theme_color": "#fffff",
+    "start_url": "../public/index.html",
     "display": "standalone",
     "icons": [
         {
-            "src": "",
-            "type": "",
-            "sizes": ""
+            "src": "../public/icons/icon-72x72.png",
+            "type": "image/png",
+            "sizes": "72x72"
         },
         {
-            "src": "",
-            "type": "",
-            "sizes": ""
+            "src": "../public/icons/icon-96x96.png",
+            "type": "image/png",
+            "sizes": "96x96"
         },
         {
-            "src": "",
-            "type": "",
-            "sizes": ""
+            "src": "../public/icons/icon-128x128.png",
+            "type": "image/png",
+            "sizes": "128x128"
         },
         {
-            "src": "",
-            "type": "",
-            "sizes": ""
+            "src": "../public/icons/icon-144x144.png",
+            "type": "image/png",
+            "sizes": "144x144"
         },
         {
-            "src": "",
-            "type": "",
-            "sizes": ""
+            "src": "../public/icons/icon-152x152.png",
+            "type": "image/png",
+            "sizes": "152x152"
         },
         {
-            "src": "",
-            "type": "",
-            "sizes": ""
+            "src": "../public/icons/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "../public/icons/icon-384x384.png",
+            "type": "image/png",
+            "sizes": "384x384"
+        },
+        {
+            "src": "../public/icons/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
         }
     ]
 

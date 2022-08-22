@@ -4,7 +4,7 @@
     "description": "Add expenses and deposits to your budget!",
     "background_color": "#5b5be5",
     "theme_color": "#5b5be5",
-    "start_url": "../index.html",
+    "start_url": "./index.html",
     "display": "standalone",
     "id": "/index.html",
     "icons": [

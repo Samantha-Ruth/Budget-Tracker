@@ -4,7 +4,7 @@
 
 The goal of this app was to create a PWA that behaved like an app and maintained functionality with and without an internet connection. A user can enter deposits and withdrawls and the app will track these transactions even when the interenet connection is spotty. 
 
-This project helped me understand what PWA's are and how they maintain functionality without an internet connection.  I learned how to audit my project using Google Lighthouse, and how to create a service worker (that intercepts fetch requests) from scratch and how to generate a manifest. 
+This project helped me understand what PWA's are and how they maintain functionality without an internet connection.  I learned how to audit my project using Google Lighthouse, and how to create a service worker (that intercepts fetch requests) from scratch, how to utitlize indexedDB for offline functionality, and how to generate a manifest. 
 
 ![Budget Tracker](https://user-images.githubusercontent.com/64170123/187012953-fe9fe7f6-559c-4c9b-855a-2bbda5ecfb12.jpg)
 

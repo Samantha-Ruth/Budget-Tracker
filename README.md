@@ -25,7 +25,7 @@ When the user navigates to the deployed product, they should be able to enter th
 
 ## Links
 
-Link to deployed project: https://whispering-escarpment-95024.herokuapp.com
+Link to deployed project: https://budget-tracker-five-vert.vercel.app/
 
 
 The url of the Git repository is here:  https://github.com/Samantha-Ruth/Budget-Tracker
